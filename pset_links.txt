@@ -36,3 +36,17 @@ https://www.pythonmorsels.com/exercises/6c3c2a8a126d49709b9d8be75f8966a5/solutio
 
 
 https://www.pythonmorsels.com/exercises/90716f2a2d294628a36f0d8d15e00431/solution/
+
+
+
+https://www.pythonmorsels.com/exercises/4587b19a49384db3b828d6d57a3bb021/solution/
+https://www.pythonmorsels.com/exercises/cb8fbdd52cf14f8cb31df4f06343cccf/solution/
+https://www.pythonmorsels.com/exercises/9af6665915964ee7ba19fe3d762d9ca8/solution/
+https://www.pythonmorsels.com/exercises/b3d7faee24c14fb5911a980810c814fc/solution/
+https://www.pythonmorsels.com/exercises/d7fd802fb6ff4bd79a63a42526d99ac1/solution/
+https://www.pythonmorsels.com/exercises/305fcd6cbf134d2699066bdaee77b73c/solution/
+https://www.pythonmorsels.com/exercises/ce25df4e9a4a449890f238a1b1e04220/solution/
+https://www.pythonmorsels.com/exercises/b4b51b130b234b4daac7793de2f0ccee/solution/
+https://www.pythonmorsels.com/exercises/8aabc8c2628f49d88a47e6ecfc37bf26/solution/
+https://www.pythonmorsels.com/exercises/90716f2a2d294628a36f0d8d15e00431/solution/
+https://www.pythonmorsels.com/exercises/76cb567f75bd4149a327f28f63f63b62/solution/
