@@ -1,21 +1,12 @@
 from collections import defaultdict
-from string import punctuation
-
-
-# def count_words(string):
-#     record = {}
-#     for word in string.lower().split():
-#         clean_word = word.strip(punctuation)
-#         record.setdefault(clean_word, 0)
-#         record[clean_word] += 1
-
-#     return record
+from string import ascii_lowercase
 
 
 def count_words(sentence):
     result = defaultdict(int)
+    letters = {*ascii_lowercase, "'"}
     for word in sentence.lower().split():
-        result[word.strip(punctuation)] += 1
+        result["".join(letter for letter in word if letter in letters)] += 1
 
     return dict(result)
 
