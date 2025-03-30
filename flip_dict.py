@@ -9,6 +9,10 @@ def flip_dict(record, *, error_on_duplicates=False):
     # }
 
 
+# def flip_dict(old_dict):
+#     return dict(zip(old_dict.values(), old_dict.keys()))
+
+
 print(flip_dict({"Python": "2015-09-15", "Java": "2015-09-14", "C": "2015-09-13"}))
 print(flip_dict({"Python": "2015-09-15", "Java": "2015-09-14", "C": "2015-09-15"}))
 
