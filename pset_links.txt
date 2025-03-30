@@ -4,49 +4,41 @@ https://www.pythonmorsels.com/strings-in-python/#string-concatenation
 https://www.pythonmorsels.com/string-concatenation-and-string-interpolation/#string-interpolation
 https://www.pythonmorsels.com/string-methods/#format
 https://www.pythonmorsels.com/type-coercion/
-
 https://www.pythonmorsels.com/positional-vs-keyword-arguments/
 
-https://www.pythonmorsels.com/string-methods/#casefold
-
-https://www.pythonmorsels.com/exercises/4a723f5741a54f5aa359b570138b8eaf/solution/
-
-https://www.pythonmorsels.com/string-concatenation-and-string-interpolation/#string-interpolation
-
 https://www.pythonmorsels.com/exercises/67397ff11ae64b22a0016b584c2347de/solution/
-
 https://www.pythonmorsels.com/exercises/17bfd87b06254d1bb3b8f6821ff1b957/solution/
-
-https://www.pythonmorsels.com/exercises/f04ba162d0664a13895f96c9587de8ae/solution/
-
 https://www.pythonmorsels.com/exercises/2055081a97194607baa30e5a096fc580/solution/
-
 https://www.pythonmorsels.com/exercises/5440a156e89e4530b8f81d8618a1ec08/solution/
-https://www.pythonmorsels.com/exercises/181c73d62de546bd9efe2463b27a3422/solution/
-
 https://www.pythonmorsels.com/exercises/aaa99e15e11544d4a123e7fb8a82cd42/solution/
-
 https://www.pythonmorsels.com/exercises/2c18319caaf64cee91a9eb91cf70f3e4/solution/
-
 https://www.pythonmorsels.com/exercises/b514a94508644eb2b5aaf47541469b6b/solution/
-
-https://www.pythonmorsels.com/exercises/b514a94508644eb2b5aaf47541469b6b/solution/
-
 https://www.pythonmorsels.com/exercises/6c3c2a8a126d49709b9d8be75f8966a5/solution/
 
 
-https://www.pythonmorsels.com/exercises/90716f2a2d294628a36f0d8d15e00431/solution/
 
+Extended Tuple Unpacking: https://www.pythonmorsels.com/extended-iterable-unpacking/
+Counter: https://www.pythonmorsels.com/using-counter/
+casefold: https://www.pythonmorsels.com/string-methods/#casefold
+          "I prefer lower and upper when I specifically want to lowercase or uppercase. But I usually prefer casefold when I'm simply "case-normalizing" for the purpose of a comparison. I feel that casefold conveys that purpose a bit better at a glance."
+Regular Expressions:
+try-except: https://www.pythonmorsels.com/how-to-catch-an-exception-in-python/
+            https://www.pythonmorsels.com/screencasts/exceptions/
+EAFP: https://www.pythonmorsels.com/terms/#EAFP
+LBYL: https://www.pythonmorsels.com/terms/#LBYL
+Comprehensions: https://treyhunner.com/2015/12/python-list-comprehensions-now-in-color/
+                https://treyhunner.com/2019/03/abusing-and-overusing-list-comprehensions-in-python/#Using_comprehensions_when_a_more_specific_tool_exists
+                https://treyhunner.com/2018/09/stop-writing-lambda-expressions/
+Looping in reverse: https://www.pythonmorsels.com/looping-in-reverse/
+map and filter: https://www.pythonmorsels.com/map-and-filter-python/#the-map-function-transforms-each-item
+Overlooked Fundamentals: https://www.pythonmorsels.com/screencasts/overlooked-fundamentals/
+Classes: https://www.pythonmorsels.com/screencasts/classes/
 
+add: https://www.pythonmorsels.com/exercises/cb8fbdd52cf14f8cb31df4f06343cccf/solution/
+combine_lists: https://www.pythonmorsels.com/exercises/b3d7faee24c14fb5911a980810c814fc/solution/
+negate: https://www.pythonmorsels.com/exercises/d7fd802fb6ff4bd79a63a42526d99ac1/solution/
 
-https://www.pythonmorsels.com/exercises/4587b19a49384db3b828d6d57a3bb021/solution/
-https://www.pythonmorsels.com/exercises/cb8fbdd52cf14f8cb31df4f06343cccf/solution/
-https://www.pythonmorsels.com/exercises/9af6665915964ee7ba19fe3d762d9ca8/solution/
-https://www.pythonmorsels.com/exercises/b3d7faee24c14fb5911a980810c814fc/solution/
-https://www.pythonmorsels.com/exercises/d7fd802fb6ff4bd79a63a42526d99ac1/solution/
-https://www.pythonmorsels.com/exercises/305fcd6cbf134d2699066bdaee77b73c/solution/
-https://www.pythonmorsels.com/exercises/ce25df4e9a4a449890f238a1b1e04220/solution/
-https://www.pythonmorsels.com/exercises/b4b51b130b234b4daac7793de2f0ccee/solution/
-https://www.pythonmorsels.com/exercises/8aabc8c2628f49d88a47e6ecfc37bf26/solution/
-https://www.pythonmorsels.com/exercises/90716f2a2d294628a36f0d8d15e00431/solution/
-https://www.pythonmorsels.com/exercises/76cb567f75bd4149a327f28f63f63b62/solution/
+get_factors: https://www.pythonmorsels.com/exercises/305fcd6cbf134d2699066bdaee77b73c/solution/
+
+swap_ends: https://www.pythonmorsels.com/exercises/ce25df4e9a4a449890f238a1b1e04220/solution/
+
