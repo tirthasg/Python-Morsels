@@ -43,3 +43,14 @@ get_factors: https://www.pythonmorsels.com/exercises/305fcd6cbf134d2699066bdaee7
 swap_ends: https://www.pythonmorsels.com/exercises/ce25df4e9a4a449890f238a1b1e04220/solution/
 
 grades: https://www.pythonmorsels.com/exercises/90210f553c964198a9f88d03eab560c2/solution/
+
+
+
+Dictionary Problems:
+
+dict_from_tuple
+flip_dict
+flip_dict_of_lists
+count_words
+sort_dict
+get_shared_keys
