@@ -48,3 +48,20 @@
 ## 11. Project-5
 
 
+# Functional
+
+## 1. Introduction
+
+## 2. Basic Refresher
+
+## 3. Variables & Memory
+
+## 4. First-Class Functions
+
+## 5. Scopes, Closures, and Decorators
+
+## 6. Tuples as Data-Structures, and NamedTuples
+
+## 7. Modules, Packages, and Namespaces
+
+## 8. Extras
