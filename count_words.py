@@ -2,7 +2,7 @@ from collections import defaultdict
 from string import ascii_lowercase
 
 
-def count_words(sentence):
+def count_words(sentence: str) -> dict[str, int]:
     result = defaultdict(int)
     letters = {*ascii_lowercase, "'"}
     for word in sentence.lower().split():
