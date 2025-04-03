@@ -8,6 +8,8 @@ class Point:
         return f"Point(x={self.x}, y={self.y}, z={self.z})"
 
     def __eq__(self, other: "Point"):
+        if not isinstance(other, Point):
+            return NotImplemented
         return (self.x, self.y, self.z) == (other.x, other.y, other.z)
 
     def __add__(self, other: "Point"):
@@ -46,3 +48,5 @@ print(2 * p1)
 p1 = Point(1, 2, 3)
 x, y, z = p1
 print(x, y, z)
+
+print(p1 == 5)
