@@ -1,4 +1,4 @@
-def to_percent(ratio):
+def to_percent(ratio: float) -> str:
     return f"{ratio * 100:.1f}%"
 
 
