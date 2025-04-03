@@ -23,3 +23,28 @@
 ## 11. Extras: MappingProxy
 
 
+# Iteration, Generators
+
+## 1. Introduction
+
+## 2. Sequence Types
+
+## 3. Project-1
+
+## 4. Iterables & Iterators
+
+## 5. Project-2
+
+## 6. Generators
+
+## 7. Project-3
+
+## 8. Iteration Tools
+
+## 9. Project-4
+
+## 10. Context Managers
+
+## 11. Project-5
+
+
