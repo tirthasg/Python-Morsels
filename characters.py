@@ -1,7 +1,7 @@
-def characters(string, *, sort=False):
+def characters(string: str, *, sort: bool = False) -> list:
     if sort:
         return sorted(string.lower())
-    
+
     return list(string.lower())
 
 
