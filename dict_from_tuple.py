@@ -2,7 +2,7 @@
 #     return {tuple_[0]: tuple_[1:] for tuple_ in tuples}
 
 
-def dict_from_tuple(tuples):
+def dict_from_tuple(tuples: list[tuple[int]]) -> dict[int, tuple[int]]:
     return {key: tuple(values) for key, *values in tuples}
 
 
