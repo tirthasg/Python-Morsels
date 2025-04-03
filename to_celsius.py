@@ -1,4 +1,4 @@
-def to_celsius(fahr):
+def to_celsius(fahr: float) -> float:
     return 5 * (fahr - 32) / 9
 
 
