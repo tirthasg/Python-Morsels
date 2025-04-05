@@ -45,6 +45,6 @@ class Circle:
 
 c = Circle(5)
 print(c)
-print(c._radius)
-print(c._diameter)
-print(c._area)
+print(c.radius)
+print(c.diameter)
+print(c.area)
