@@ -26,6 +26,22 @@ class Circle:
         self._diameter = 2 * radius
         self._area = pi * radius**2
 
+    @property
+    def diameter(self):
+        return self._diameter
+
+    @diameter.setter
+    def diameter(self, diameter):
+        if diameter < 0:
+            raise ValueError("Diameter cannot be negative")
+
+        self._diameter = diameter
+        self._radius = diameter / 2
+
+    @property
+    def area(self):
+        return self._area
+
 
 c = Circle(5)
 print(c)
