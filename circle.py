@@ -3,6 +3,9 @@ from math import pi
 
 class Circle:
     def __init__(self, radius=1):
+        if radius < 0:
+            raise ValueError("Radius cannot be negative")
+
         self._radius = radius
         self._diameter = 2 * radius
         self._area = pi * radius**2
@@ -17,7 +20,7 @@ class Circle:
     @radius.setter
     def radius(self, radius):
         if radius < 0:
-            raise ValueError()
+            raise ValueError("Radius cannot be negative")
 
         self._radius = radius
         self._diameter = 2 * radius
