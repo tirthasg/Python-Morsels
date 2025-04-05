@@ -2,7 +2,7 @@ from math import pi
 
 
 class Circle:
-    def __init__(self, radius=1):
+    def __init__(self, radius: float = 1.0):
         if radius < 0:
             raise ValueError("Radius cannot be negative")
 
@@ -18,7 +18,7 @@ class Circle:
         return self._radius
 
     @radius.setter
-    def radius(self, radius):
+    def radius(self, radius: float):
         if radius < 0:
             raise ValueError("Radius cannot be negative")
 
@@ -31,7 +31,7 @@ class Circle:
         return self._diameter
 
     @diameter.setter
-    def diameter(self, diameter):
+    def diameter(self, diameter: float):
         if diameter < 0:
             raise ValueError("Diameter cannot be negative")
 
