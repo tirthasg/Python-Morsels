@@ -47,11 +47,14 @@ def flip_dict_of_lists(record, dict_type=dict, key_func=None):
 
 d = {"a": [1, 2], "b": [3, 1], "c": [2]}
 print(flip_dict_of_lists(d))
+# {1: ['a', 'b'], 2: ['a', 'c'], 3: ['b']}
 
 toppings = OrderedDict(
     {"Trey": ["anchovies", "olives"], "Guido": ["olives", "pineapple"]}
 )
 print(flip_dict_of_lists(toppings, dict_type=OrderedDict))
+# OrderedDict({'anchovies': ['Trey'], 'olives': ['Trey', 'Guido'], 'pineapple': ['Guido']})
 
 toppings = {"Trey": ["anchovies", "olives"], "Guido": ["Olives", "Pineapple"]}
 print(flip_dict_of_lists(toppings, key_func=lowercase))
+# {'anchovies': ['Trey'], 'olives': ['Trey', 'Guido'], 'pineapple': ['Guido']}
