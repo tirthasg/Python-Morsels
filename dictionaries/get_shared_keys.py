@@ -1,8 +1,8 @@
-# def get_shared_keys(dict1, dict2):
+# def get_shared_keys(dict1: dict, dict2: dict) -> list:
 #     return [key for key in dict1.keys() if key in set(dict2.keys())]
 
 
-def get_shared_keys(dict1, dict2):
+def get_shared_keys(dict1: dict, dict2: dict) -> list:
     return list(dict1.keys() & dict2.keys())
 
 
