@@ -2,6 +2,8 @@ from math import pi
 
 
 class Circle:
+    __slots__ = ["_radius", "_diameter", "_area"]
+
     def __init__(self, radius: float = 1.0):
         if radius < 0:
             raise ValueError("Radius cannot be negative")
