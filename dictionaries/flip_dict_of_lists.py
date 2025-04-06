@@ -1,17 +1,17 @@
 from collections import OrderedDict, defaultdict
-from typing import Callable, Mapping
+from typing import Callable, Mapping, Union
 
 
-def lowercase(string):
+def lowercase(string: str) -> str:
     return string.lower()
 
 
 def flip_dict_of_lists(
-    record: Mapping[str, list[int | str]],
-    dict_type: Mapping = dict,
+    record: dict | OrderedDict,
+    dict_type: Callable = dict,
     key_func: Callable[[str], str] = lambda k: k,
-) -> Mapping[int | str, list[str]]:
-    flipped_record = {}
+) -> dict | OrderedDict:
+    flipped_record: dict = {}
     for key, values in record.items():
         for value in values:
             flipped_record.setdefault(key_func(value), []).append(key)
@@ -20,11 +20,11 @@ def flip_dict_of_lists(
 
 
 # def flip_dict_of_lists(
-#     record: Mapping[str, list[int | str]],
-#     dict_type: Mapping = dict,
+#     record: dict | OrderedDict,
+#     dict_type: Callable = dict,
 #     key_func: Callable[[str], str] = lambda k: k,
-# ) -> Mapping[int | str, list[str]]:
-#     flipped_dict = defaultdict(list)
+# ) -> dict | OrderedDict:
+#     flipped_dict: defaultdict = defaultdict(list)
 #     for key, values in record.items():
 #         for value in values:
 #             flipped_dict[key_func(value)].append(key)
@@ -42,6 +42,6 @@ toppings = OrderedDict(
 print(flip_dict_of_lists(toppings, dict_type=OrderedDict))
 # OrderedDict({'anchovies': ['Trey'], 'olives': ['Trey', 'Guido'], 'pineapple': ['Guido']})
 
-toppings = {"Trey": ["anchovies", "olives"], "Guido": ["Olives", "Pineapple"]}
-print(flip_dict_of_lists(toppings, key_func=lowercase))
+toppings_2 = {"Trey": ["anchovies", "olives"], "Guido": ["Olives", "Pineapple"]}
+print(flip_dict_of_lists(toppings_2, key_func=lowercase))
 # {'anchovies': ['Trey'], 'olives': ['Trey', 'Guido'], 'pineapple': ['Guido']}
