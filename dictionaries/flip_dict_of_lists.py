@@ -1,5 +1,6 @@
-from collections import OrderedDict, defaultdict
-from typing import Callable, Mapping, Union
+# from collections import defaultdict
+from collections import OrderedDict
+from typing import Callable
 
 
 def lowercase(string: str) -> str:
