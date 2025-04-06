@@ -4,7 +4,7 @@ from string import punctuation
 
 
 # def count_words(sentence: str) -> dict[str, int]:
-#     frequency = {}
+#     frequency: dict[str, int] = {}
 #     for word in sentence.split():
 #         key = word.strip(punctuation).lower()
 #         frequency[key] = frequency.setdefault(key, 0) + 1
