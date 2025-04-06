@@ -1,14 +1,27 @@
+# from collections import Counter, defaultdict
 from collections import defaultdict
-from string import ascii_lowercase
+from string import punctuation
+
+
+# def count_words(sentence: str) -> dict[str, int]:
+#     frequency = {}
+#     for word in sentence.split():
+#         key = word.strip(punctuation).lower()
+#         frequency[key] = frequency.setdefault(key, 0) + 1
+
+#     return frequency
 
 
 def count_words(sentence: str) -> dict[str, int]:
-    result = defaultdict(int)
-    letters = {*ascii_lowercase, "'"}
-    for word in sentence.lower().split():
-        result["".join(letter for letter in word if letter in letters)] += 1
+    frequency = defaultdict(int)
+    for word in sentence.split():
+        frequency[word.strip(punctuation).lower()] += 1
 
-    return dict(result)
+    return frequency
+
+
+# def count_words(sentence: str) -> dict[str, int]:
+#     return Counter([word.strip(punctuation).lower() for word in sentence.split()])
 
 
 print(count_words("oh what a day what a lovely day"))
