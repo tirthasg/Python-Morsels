@@ -1,5 +1,5 @@
-def sort_dict(input_dict):
-    return dict(sorted(input_dict.items()))
+def sort_dict(record: dict) -> dict:
+    return dict(sorted(record.items()))
 
 
 original_dict = {1: "N", 6: "!", 4: "T", 3: "A", 2: "E", 5: "O"}
