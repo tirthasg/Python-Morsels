@@ -4,9 +4,9 @@
 
 ## 2. Associate Arrays: Theory
 
-## 3. Dictionaries
+## 3. Dictionaries -> Completed
 
-## 4. Coding Exercises
+## 4. Coding Exercises -> Completed
 
 ## 5. Sets
 
