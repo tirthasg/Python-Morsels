@@ -1,8 +1,4 @@
-from math import sqrt, hypot
-
-
-# def get_hypotenuse(a, b):
-#     return sqrt(a**2 + b**2)
+from math import hypot
 
 
 def get_hypotenuse(a, b):
