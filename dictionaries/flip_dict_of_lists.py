@@ -6,30 +6,30 @@ def lowercase(string):
     return string.lower()
 
 
-# def flip_dict_of_lists(
-#     record: Mapping[str, list[int | str]],
-#     dict_type: Mapping = dict,
-#     key_func: Callable[[str], str] = lambda k: k,
-# ) -> Mapping[int | str, list[str]]:
-#     flipped_record = {}
-#     for key, values in record.items():
-#         for value in values:
-#             flipped_record.setdefault(key_func(value), []).append(key)
-
-#     return dict_type(flipped_record)
-
-
 def flip_dict_of_lists(
     record: Mapping[str, list[int | str]],
     dict_type: Mapping = dict,
     key_func: Callable[[str], str] = lambda k: k,
 ) -> Mapping[int | str, list[str]]:
-    flipped_dict = defaultdict(list)
+    flipped_record = {}
     for key, values in record.items():
         for value in values:
-            flipped_dict[key_func(value)].append(key)
+            flipped_record.setdefault(key_func(value), []).append(key)
 
-    return dict_type(flipped_dict)
+    return dict_type(flipped_record)
+
+
+# def flip_dict_of_lists(
+#     record: Mapping[str, list[int | str]],
+#     dict_type: Mapping = dict,
+#     key_func: Callable[[str], str] = lambda k: k,
+# ) -> Mapping[int | str, list[str]]:
+#     flipped_dict = defaultdict(list)
+#     for key, values in record.items():
+#         for value in values:
+#             flipped_dict[key_func(value)].append(key)
+
+#     return dict_type(flipped_dict)
 
 
 d = {"a": [1, 2], "b": [3, 1], "c": [2]}
