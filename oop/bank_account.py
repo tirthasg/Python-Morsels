@@ -59,3 +59,12 @@ print(a2.balance)
 a1.transfer(a2, 3)
 print(a1)
 print(a2)
+
+a1 = BankAccount(-10)
+a1 = BankAccount(10)
+a1.withdraw(-5)
+a1.withdraw(50)
+a1.deposit(-5)
+
+a2 = BankAccount(balance=20)
+a1.transfer(a2, 100)
