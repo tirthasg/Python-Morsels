@@ -44,3 +44,18 @@ class BankAccount:
 
     def __repr__(self):
         return f"BankAccount(balance={self.balance})"
+
+
+a1 = BankAccount()
+print(a1.balance)
+
+a1.deposit(10)
+print(a1.balance)
+
+a2 = BankAccount(balance=20)
+a2.withdraw(15)
+print(a2.balance)
+
+a1.transfer(a2, 3)
+print(a1)
+print(a2)
