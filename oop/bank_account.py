@@ -82,7 +82,7 @@ print(BankAccount.accounts)
 
 a1 = BankAccount(100)
 print(a1.balance)
-a1.balance = 500
-print(a1.balance)
+# a1.balance = 500
+# print(a1.balance)
 a1.deposit(400)
 print(a1.balance)
