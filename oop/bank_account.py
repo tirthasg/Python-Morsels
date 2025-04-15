@@ -75,3 +75,7 @@ print(a1.number)
 print(a2.number)
 a3 = BankAccount(50)
 print(a3.number)
+
+print(BankAccount.accounts)
+print(a1.transfer(a3, 15))
+print(BankAccount.accounts)
