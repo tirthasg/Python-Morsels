@@ -68,3 +68,10 @@ print(a2)
 
 # a2 = BankAccount(balance=20)
 # a1.transfer(a2, 100)
+
+a1 = BankAccount(100)
+a2 = BankAccount()
+print(a1.number)
+print(a2.number)
+a3 = BankAccount(50)
+print(a3.number)
