@@ -9,7 +9,7 @@ In Python 3.7+, dictionaries are ordered based on the order of insertion of (key
     key2: value2,
     key3: value3,
     ...
-} -> Dictionary literal
+} -> A dictionary literal
 
 dict(**kwargs) -> Creates a dictionary from a possibly empty set of valid keyword arguments. The keys must be identifiers, and the keys of the created dictionary will be strings of these identifiers. If duplicate keys are provided in the constructor, the last value provided will be the value for that key. 
 
@@ -24,20 +24,23 @@ Note: All the values in the dictionary refer to the same single instance. Theref
 {
     key_expression: value_expression 
     for item in iterable if condition
-} -> Simple Dictionary comprehenion
+} -> A dictionary comprehenion
 
 {
     key_expression: value_expression
     if condition 
     else alternative_value_expression 
     for item in iterable
-} -> Dictionary comprehenion with condition on value_expression
+} -> A dictionary comprehenion with condition to include the value_expression or the alternative_value_expression
 
 {
     key_expression: value_expression 
     for item in iterable 
     if condition
-} -> Dictionary comprehension with condition on the pair key_expression: value_expression
+} -> A dictionary comprehension with condition to include the (key_expression, value_expression) pair
+
+Note:
+Usual rules for duplicate keys applies.
 
 Tip: 
 Replace Dictionary comprehenion of the form: {key: value for key, value in iterable} to dict(iterable).
