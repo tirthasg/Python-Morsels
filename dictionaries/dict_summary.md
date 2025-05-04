@@ -13,11 +13,13 @@ In Python 3.7+, dictionaries are ordered based on the order of insertion of (key
 
 dict(**kwargs) -> Creates a dictionary from a possibly empty set of valid keyword arguments. The keys must be identifiers, and the keys of the created dictionary will be strings of these identifiers. If duplicate keys are provided in the constructor, the last value provided will be the value for that key. 
 
-dict(iterable, **kwargs) -> Creates a dictionary from the optional positional argument, iterable, which consists of iterables of (key, value) pairs, and possibly empty set of valid keyword arguments. If keyword arguments are provided, they are added to the dictionary created from the iterable. The usual rules for keyword arguments, and duplicate keys hold.
+dict(iterable, **kwargs) -> Creates a dictionary from the optional positional argument, iterable, which consists of iterables of (key, value) pairs, and possibly empty set of valid keyword arguments. If keyword arguments are provided, they are added to the dictionary created from the iterable. The usual rules for keyword arguments, and duplicate keys are applied.
 
-dict(mapping, **kwargs) -> Creates a dictionary from the optional position argument, mapping, and possibly empty set of valid keyword arguments. If keyword arguments are provided, they are added to the dictionary created from the mapping. The usual rules for keyword arguments, and duplicate keys hold.
+dict(mapping, **kwargs) -> Creates a dictionary from the optional position argument, mapping, and possibly empty set of valid keyword arguments. If keyword arguments are provided, they are added to the dictionary created from the mapping. The usual rules for keyword arguments, and duplicate keys are applied.s
 
-dict.fromkeys(iterable, value=None) -> Alternative constructor, implemented as a classmethod of dict. Dictionary created from an iterable, with usual rules applied. All of the values of the key refer to the same single instance. Therefore, doesn't make sense for it to be a mutable object. To get distict values, use dict comprehensions instead. Value defaults to None.
+dict.fromkeys(iterable, value=None) -> Creates a dictionary from the alternative constructor implemented as a class method of the dict class. It takes an iterable of hashable keys and assigns the same value to each key. While the iterable may contain duplicate keys, the resulting dictionary will only contain unique keys. If no value is provided, the default value assigned to each key will be None.
+
+Note: All the values in the dictionary refer to the same single instance. Therefore, doesn't make sense for it to be a mutable object. To get distict values, use dict comprehensions instead.
 
 {
     key_expression: value_expression 
