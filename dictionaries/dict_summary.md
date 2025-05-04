@@ -49,11 +49,11 @@ Replace Dictionary comprehenion of the form: {key: value for key, value in itera
 
 Operations, and dictionary methods:
 
-key in d -> True if key in d, else False.
-key not in d -> True if key not in d, else False.
+key in d -> Returns True if the key exists in dictionary d, otherwise False.
+key not in d -> Returns True if the key does not exist in dictionary d, otherwise False.
 
-d[key] -> Returns value corresponding to key, if key is present in d. Else, KeyError.
-d[key] = value -> Inserts key with value, if key is not present in d. Else, updates the value for key.
+d[key] -> Returns the value associated with key. Raises a KeyError if the key is not found.
+d[key] = value -> Inserts or updates the key-value pair for key.
 
 d.get(key, default=None) -> Returns value corresponding to key, if key is present in d. Else, returns default. The default defaults to None. The key is not inserted with default value, if it's not present in d. Note that, default isn't a keyword argument.
 
