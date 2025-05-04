@@ -1,6 +1,8 @@
 Dictionary:
 
-Mutable mapping from unique, hashable keys to arbitrary python object values. Two hashable objects are considered unique, if they don't compare equal using ==. Dictionaries are ordered in order of insertion of (key, value) pairs in Python 3.7+.
+A dictionary in python is a mutable mapping from unique, hashable keys to arbitrary values.
+Two hashable objects are considered distinct, if they don't compare equal using == operator.
+In Python 3.7+, dictionaries are ordered based on the order of insertion of (key, value) pairs.
 
 {
     key1: value1,
@@ -9,7 +11,7 @@ Mutable mapping from unique, hashable keys to arbitrary python object values. Tw
     ...
 } -> Dictionary literal
 
-dict(**kwargs) -> Dictionary created from a possibly empty set of "valid" keyword arguments. For the keys to be valid, they must be identifiers. The keys of the dictionary will be strings of these identifiers. In case of duplicate keys in the constructor, the last value for that key becomes the corresponding value in the dictionary. 
+dict(**kwargs) -> Creates a dictionary from a possibly empty set of valid keyword arguments.  The keys must be identifiers, and the keys of the created dictionary will be strings of these identifiers. If duplicate keys are provided in the constructor, the last value provided will be the value for that key. 
 
 dict(iterable, **kwargs) -> Dictionary created from an optional positional argument, iterable, whose values are themselves iterables of two values. The first value must be hashable, and represents the key, and the second value is any arbitrary python object, and represents the value corresponding to the key. The usual rules apply for the keyword arguments. If keyword arguments are given, the keyword arguments and their values are added to the dictionary created from the positional argument. In case of duplicate keys in the constructor, the last value for that key becomes the corresponding value in the dictionary. 
 
