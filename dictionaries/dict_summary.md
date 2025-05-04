@@ -4,6 +4,8 @@ A dictionary in python is a mutable mapping from unique, hashable keys to arbitr
 Two hashable objects are considered distinct, if they don't compare equal using == operator.
 In Python 3.7+, dictionaries are ordered based on the order of insertion of (key, value) pairs.
 
+Creating a dictionary:
+
 {
     key1: value1,
     key2: value2,
@@ -44,6 +46,8 @@ Usual rules for duplicate keys applies.
 
 Tip: 
 Replace Dictionary comprehenion of the form: {key: value for key, value in iterable} to dict(iterable).
+
+Operations, and dictionary methods:
 
 key in d -> True if key in d, else False.
 key not in d -> True if key not in d, else False.
