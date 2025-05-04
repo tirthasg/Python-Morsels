@@ -101,3 +101,19 @@ Dictionaries compare equal if and only if they have the same (key, value) pairs 
 **d -> Double-star notation to unpack the dictionary.
 {**d1, **d2, **d3} -> Insertion order preserved while unpacking, but the last update wins.
 {**d, 'c': 100, 'd': 200} -> Again, insertion order preserved while unpacking, but the last update wins.
+
+
+
+https://www.youtube.com/@CMU1141111611/playlists
+
+https://www.youtube.com/watch?v=vH7ZgoXSp44&list=PLy-82AVP8uEB8UipSJGUIKrA19iONeW04&index=1
+
+https://www.youtube.com/watch?v=xjl8NG28UXM&list=PL4YhK0pT0ZhXteJ2OTzg4vgySjxTU_QUs&index=1
+
+https://youtube.com/playlist?list=PL4YhK0pT0ZhXteJ2OTzg4vgySjxTU_QUs&si=fVMKXlXqcozU8ujg
+
+https://www.youtube.com/@vvinoducsd/playlists
+
+https://www.youtube.com/@neubig/playlists
+
+https://www.youtube.com/playlist?list=PLqC25OT8ZpD3WxQ0FwWMGPS_BcWdcKyZy
