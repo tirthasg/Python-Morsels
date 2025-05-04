@@ -11,11 +11,11 @@ In Python 3.7+, dictionaries are ordered based on the order of insertion of (key
     ...
 } -> Dictionary literal
 
-dict(**kwargs) -> Creates a dictionary from a possibly empty set of valid keyword arguments.  The keys must be identifiers, and the keys of the created dictionary will be strings of these identifiers. If duplicate keys are provided in the constructor, the last value provided will be the value for that key. 
+dict(**kwargs) -> Creates a dictionary from a possibly empty set of valid keyword arguments. The keys must be identifiers, and the keys of the created dictionary will be strings of these identifiers. If duplicate keys are provided in the constructor, the last value provided will be the value for that key. 
 
-dict(iterable, **kwargs) -> Creates a dictionary from the optional positional argument, iterable, which consists of iterables of (key, value) pairs. If keyword arguments are provided, they are added to the dictionary created from the iterable. Usual rules for keyword arguments, and duplicate keys hold.
+dict(iterable, **kwargs) -> Creates a dictionary from the optional positional argument, iterable, which consists of iterables of (key, value) pairs, and possibly empty set of valid keyword arguments. If keyword arguments are provided, they are added to the dictionary created from the iterable. The usual rules for keyword arguments, and duplicate keys hold.
 
-dict(mapping, **kwargs) -> Dictionary created from an optional positional argument, mapping, and possibly empty set of valid keyword arguments. The usual rules apply for the keyword arguments. If keyword arguments are given, the keyword arguments and their values are added to the dictionary created from the positional argument. In case of duplicate keys in the constructor, the last value for that key becomes the corresponding value in the dictionary. 
+dict(mapping, **kwargs) -> Creates a dictionary from the optional position argument, mapping, and possibly empty set of valid keyword arguments. If keyword arguments are provided, they are added to the dictionary created from the mapping. The usual rules for keyword arguments, and duplicate keys hold.
 
 dict.fromkeys(iterable, value=None) -> Alternative constructor, implemented as a classmethod of dict. Dictionary created from an iterable, with usual rules applied. All of the values of the key refer to the same single instance. Therefore, doesn't make sense for it to be a mutable object. To get distict values, use dict comprehensions instead. Value defaults to None.
 
