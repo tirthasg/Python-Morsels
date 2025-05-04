@@ -55,63 +55,75 @@ key not in d -> Returns True if the key does not exist in dictionary d, otherwis
 d[key] -> Returns the value associated with key. Raises a KeyError if the key is not found.
 d[key] = value -> Inserts or updates the key-value pair for key.
 
-d.get(key, default=None) -> Returns value corresponding to key, if key is present in d. Else, returns default. The default defaults to None. The key is not inserted with default value, if it's not present in d. Note that, default isn't a keyword argument.
+d.get(key, default=None) -> Returns the value for key if present, otherwise returns default (defaulting to None). The key is not inserted with the default value.
+Note: default isn't a keyword argument.
 
-d.setdefault(key, default=None) -> Returns value corresponding to key, if key is present in d. Else, insert the key with default value, and return default. The default defaults to None. Note that, default isn't a keyword argument.
+d.setdefault(key, default=None) -> Returns the value for key if present, otherwise inserts the key with the default value and returns the default.
+Note: default isn't a keyword argument.
 
-del d[key] -> Removes the key, and its value from the dictionary, if present. Else, KeyError.
+del d[key] -> Deletes the key and its associated value. Raises a KeyError if the key is not found.
 
-d.pop(key [, default]) -> Removes the key from the dictionary, and returns it's value, if present. Else if, default is provided, returns the default value. Else, KeyError. Note that, default isn't a keyword argument.
+d.pop(key [, default]) -> Removes and returns the value associated with key. If the key is not found, it returns default if provided, otherwise raises a KeyError.
 
-d.popitem() -> Deletes, and returns the (key, value) pair as a tuple in LIFO, if d is non-empty. Else, KeyError.
+d.popitem() -> Removes and returns the last (key, value) pair as a tuple in LIFO order. Raises a KeyError if the dictionary is empty.
 
-d.clear() -> Empties the dictionary in-place.
+d.clear() -> Removes all items from the dictionary.
 
-d.copy() -> Returns a shallow-copy of d.
+d.copy() -> Returns a shallow copy of the dictionary.
 from copy import deepcopy
-deepcopy(d) -> Returns a deep-copy of d.
+deepcopy(d) -> Returns a deep copy of the dictionary, which copies all objects recursively.
 
-{**d}, dict(d), {key: value for key, value in d.items()} -> All are shallow-copies of d.
+{**d}, dict(d), {key: value for key, value in d.items()} -> All are methods to create shallow copies of d.
 
-len(d) -> Returns the number of items in the d.
+len(d) -> Returns the number of items in the dictionary.
 
-list(d) -> Returns the list of keus in d.
+list(d) -> Returns a list of the keys in the dictionary.
 
-iter(d) -> Returns an iterator over the keys in d. Shortcut for iter(d.keys()).
-reversed(d) -> Returns a reverse iterator over the keys in d. Shortcut for reversed(d.keys()).
+iter(d) -> Returns an iterator over the keys. Equivalent to iter(d.keys()).
 
-d.keys() -> Returns a view of the keys of d. The keys view behave as a (frozen) set because, the keys are unique, and hashable.
-d.values() -> Returns a view of the values of d. The values view never behave as a set.
-d.items() -> Returns a view of the items of d. The items view may behave as a (frozen) set, depending on whether the values are hashable. They need not be unique. The key's uniqueness is enough to make a (key, value) pair unique.
+reversed(d) -> Returns a reverse iterator over the keys. Equivalent to reversed(d.keys()).
+
+d.keys() -> Returns a read-only view of the dictionary's keys. Keys are unique and hashable, making the view behave like a frozen set.
+
+d.values() -> Returns a read-only view of the dictionary's values. It doesn't behave like a set.
+
+d.items() -> Returns a read-only view of the dictionary's (key, value) pairs. It may behave as a frozen set, depending on whether the values are hashable. They need not be unique though, since the key's uniqueness guarantees that a (key, value) pair is unique.
 
 Note:
 Views are read-only iterables. Can't update the dictionary using the views. However, they reflect the changes in the dictionary.
 
 An equality comparison between one dict.values() view and another will always return False. This also applies when comparing dict.values() to itself.
 
-d1.keys(), and d2.keys() are ordered, but d1.keys() | d2.keys() is a set, and isn't ordered.
+d1.keys(), and d2.keys() are ordered, but d1.keys() | d2.keys() is a set, and isn't ordered. 
 
-Common set operations:
-Union: |
-Intersection: &
-Difference: -
-Symmetric difference: ^
+Note:
+They return an ordinary set, not a frozen set.
 
-d.update(d2) -> For every key in d2, if key is not in d, then insert (key, value) pair in d. Else, update the value.
+d.update(d2) -> Updates dictionary d with key-value pairs from dictionary d2. If a key is already present in d, its value is updated.
 
-d.update(iterable) -> Usual rules of iterable applies. And, usual rules of insert/update applies.
+d.update(iterable) -> Updates d with key-value pairs from an iterable. Usual rule for an iterable applies.
 
-d.update(**kwargs) -> Usual rules of insert/update applies. And, usual rules of keyword argument applies.
+d.update(**kwargs) -> Updates d with key-value pairs from the given keyword arguments. Usual rule for keyword argument applies.
 
-d | d2 -> Create a new dictionary with the merged keys and values of d and d2, which must both be dictionaries. The values of d2 take priority when d and d2 share keys.
+d | d2 -> Creates a new dictionary by merging d and d2, where d2 values take precedence in case of key overlap.
 
-d |= d2 -> Update the dictionary d with keys and values from d2, which may be either a mapping or an iterable of (key, value) pairs. Usual rules of iterable applies. The values of d2 take priority when d and d2 share keys.
+d |= d2 -> Updates dictionary d with keys and values from d2. This can be a dictionary or an iterable of (key, value) pairs.
 
-Dictionaries compare equal if and only if they have the same (key, value) pairs (regardless of ordering). They are same if they compare equal using ==. Order comparisons (<, <=, >=, >) raise TypeError.
+Comparison and equality of dictionaries:
 
-**d -> Double-star notation to unpack the dictionary.
-{**d1, **d2, **d3} -> Insertion order preserved while unpacking, but the last update wins.
-{**d, 'c': 100, 'd': 200} -> Again, insertion order preserved while unpacking, but the last update wins.
+Dictionaries are considered equal if they contain the same (key, value) pairs, regardless of insertion order.
+
+Dictionary comparisons using == will check if the (key, value) pairs are the same.
+
+Order comparisons (<, <=, >=, >) raise a TypeError.
+
+Dictionary unpacking:
+
+**d -> The double-star notation unpacks the dictionary.
+
+{**d1, **d2, **d3} -> When unpacking multiple dictionaries, the insertion order is preserved, but the last dictionary in the sequence overrides previous ones in case of key overlap.
+
+{**d, 'c': 100, 'd': 200} -> Unpacks the dictionary d, adding or overriding specific keys ('c' and 'd' in this case).
 
 
 
